@@ -154,3 +154,15 @@ footer.site a:hover { color: rgb(var(--fg-dim)); }
   .download-box dl { grid-template-columns: 110px 1fr; }
   footer.site .wrap { flex-direction: column; gap: 8px; }
 }
+
+.cmd { display: flex; align-items: center; gap: .5rem; margin: 1rem 0 .75rem; padding: .55rem .75rem; border: 1px solid #262c37; border-radius: 6px; background: #0a0c11; font: 500 .85rem/1.4 ui-monospace, Consolas, monospace; overflow-x: auto; }
+.cmd code { flex: 1; white-space: nowrap; color: #e6e8ee; }
+.cmd button { flex: none; padding: .3rem .7rem; border: 1px solid #5eead4; border-radius: 4px; background: transparent; color: #5eead4; font: inherit; cursor: pointer; transition: background .15s; }
+.cmd button:hover, .cmd button:focus-visible { background: rgba(94, 234, 212, .12); }
+
+.install-options { display: grid; grid-template-columns: auto 1fr; gap: 1rem; margin: 1.25rem 0 1rem; }
+.option { padding: 1rem; border: 1px solid #262c37; border-radius: 8px; background: #12161d; display: flex; flex-direction: column; gap: .75rem; }
+.option h3 { margin: 0; font-size: .75rem; letter-spacing: .08em; text-transform: uppercase; color: #9aa1ae; }
+.option .btn { align-self: flex-start; white-space: nowrap; }
+.option .cmd { margin: 0; }
+@media (max-width: 640px) { .install-options { grid-template-columns: 1fr; } }

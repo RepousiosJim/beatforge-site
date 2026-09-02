@@ -98,7 +98,16 @@
         <dt>Price</dt><dd>Free</dd>
         <dt>Latest</dt><dd data-release-version>v0.1.0</dd>
       </dl>
-      <a class="btn btn-primary" href="https://github.com/RepousiosJim/beatforge-site/releases/latest">Download for Windows</a>
+      <div class="install-options">
+        <div class="option">
+          <h3>Installer</h3>
+          <a class="btn btn-primary" href="https://github.com/RepousiosJim/beatforge-site/releases/latest">Download for Windows</a>
+        </div>
+        <div class="option">
+          <h3>Terminal</h3>
+          <div class="cmd"><code id="install-cmd">irm https://repousiosjim.github.io/beatforge-site/install.ps1 | iex</code><button type="button" data-copy="install-cmd">Copy</button></div>
+        </div>
+      </div>
       <p class="warn">Unsigned installer: SmartScreen will warn. Choose "More info" → "Run anyway".</p>
     </div>
   </section>

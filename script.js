@@ -20,3 +20,11 @@ async function loadRelease() {
 }
 
 loadRelease();
+
+document.querySelectorAll("[data-copy]").forEach((btn) => {
+  btn.addEventListener("click", async () => {
+    await navigator.clipboard.writeText(document.getElementById(btn.dataset.copy).textContent);
+    btn.textContent = "Copied";
+    setTimeout(() => (btn.textContent = "Copy"), 1500);
+  });
+});
