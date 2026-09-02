@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en" data-theme="forge-dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BeatForge — AI-assisted DAW for Windows</title>
+<meta name="description" content="BeatForge is a fullscreen, AI-assisted desktop DAW for Windows: step sequencer, piano roll, mixer, automation, and an AI assistant that runs on your own OpenRouter key.">
+<meta property="og:title" content="BeatForge — AI-assisted DAW for Windows">
+<meta property="og:description" content="Sequencer, piano roll, mixer, automation, and an AI assistant on your own OpenRouter key. Free, for Windows 10/11.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/icon-256.png">
+<link rel="icon" href="assets/favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site">
+  <nav class="wrap">
+    <a class="wordmark" href="index.html">Beat<span>Forge</span></a>
+    <div class="navlinks">
+      <a href="#features">Features</a>
+      <a href="#download">Download</a>
+      <a href="changelog.html">Changelog</a>
+      <a href="https://github.com/RepousiosJim/beatforge-site">GitHub</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section class="hero wrap">
+    <h1>A DAW that stays out of your way, and helps when you ask.</h1>
+    <p class="sub">BeatForge is a fullscreen, AI-assisted desktop DAW for Windows — sequencer, piano roll, mixer, and automation, with an AI assistant that runs on your own OpenRouter key.</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="https://github.com/RepousiosJim/beatforge-site/releases/latest">Download for Windows</a>
+      <span class="meta" data-release-meta>v0.1.0</span>
+    </div>
+    <figure class="screenshot">
+      <img class="placeholder" src="assets/screenshot-app.png" alt="BeatForge main window: step sequencer, channel rack and mixer">
+      <figcaption>Forge Dark theme: sequencer, channel rack and mixer</figcaption>
+    </figure>
+  </section>
+
+  <section id="features" class="wrap">
+    <h2>Everything a track needs</h2>
+    <p class="section-lead">Built as one instrument, not a bundle of plugins.</p>
+    <div class="grid-features">
+      <div class="card">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="4" height="18"/><rect x="10" y="3" width="4" height="18"/><rect x="17" y="3" width="4" height="18"/></svg>
+        <h3>Step sequencer</h3>
+        <p>Channel rack with per-step velocity and mutes; patterns arranged in the playlist.</p>
+      </div>
+      <div class="card">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 3v18M3 3h4v10H3M9 3h4v14H9M15 3h4v7h-4M15 3v18"/></svg>
+        <h3>Piano roll</h3>
+        <p>Quantize, humanize, and chord entry for fast, expressive MIDI.</p>
+      </div>
+      <div class="card">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="4"/><rect x="3" y="10" width="12" height="4"/><rect x="3" y="16" width="15" height="4"/></svg>
+        <h3>Playlist &amp; arrangement</h3>
+        <p>Pattern and audio clips on one timeline, drag to arrange a full song.</p>
+      </div>
+      <div class="card">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 21V10M6 6V3M12 21v-6M12 11V3M18 21v-3M18 14V3"/><circle cx="6" cy="8" r="2"/><circle cx="12" cy="13" r="2"/><circle cx="18" cy="16" r="2"/></svg>
+        <h3>Mixer &amp; effects</h3>
+        <p>EQ, compressor, reverb, delay, chorus, distortion, multiband, sends and buses.</p>
+      </div>
+      <div class="card">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 16c3 0 3-9 6-9s2 12 5 12 3-13 6-13"/></svg>
+        <h3>Automation lanes</h3>
+        <p>Draw curves over any parameter, synced to the arrangement.</p>
+      </div>
+      <div class="card">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3a3 3 0 0 1 3 3v6a3 3 0 0 1-6 0V6a3 3 0 0 1 3-3z"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg>
+        <h3>Recording &amp; import</h3>
+        <p>Record audio or import WAV, then trim, split, fade and gain non-destructively.</p>
+      </div>
+      <div class="card">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M9 9h.01M9 15h.01M15 9h.01M15 15h.01M9 12h6"/></svg>
+        <h3>VST3 instruments</h3>
+        <p>Scan and audition installed VST3 instruments on Windows (experimental).</p>
+      </div>
+      <div class="card">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l3 3M18 6l-3 3M6 18l3-3M18 18l-3-3"/></svg>
+        <h3>Export</h3>
+        <p>WAV, MP3, and MIDI export, with live playback and export kept in parity.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap">
+    <h2>AI, on your terms</h2>
+    <p class="section-lead">Assistance for drum patterns, melodies, mix suggestions and sample picking — nothing runs without your say.</p>
+    <div class="two-col">
+      <ul>
+        <li>Bring your own OpenRouter API key — BeatForge never charges you or resells access.</li>
+        <li>Choose a model per feature: drums, melody, mixing, and sample search can each use a different model.</li>
+      </ul>
+      <ul>
+        <li>Cost shown per call before and after it runs, with a running total.</li>
+        <li>Set a budget; BeatForge stops calling out once you hit it.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="wrap">
+    <h2>Built to not lose your work</h2>
+    <p class="section-lead">Saving is atomic, autosave keeps three recovery slots, and what you hear while working is what gets exported.</p>
+    <div class="two-col">
+      <ul>
+        <li>Atomic project saves — a crash mid-write can't corrupt your file.</li>
+        <li>Autosave keeps three recovery slots, offered back on next launch.</li>
+      </ul>
+      <ul>
+        <li>Live playback and export render through the same audio path.</li>
+        <li>No silent surprises between what you mixed and what you shipped.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="download" class="wrap">
+    <h2>Download</h2>
+    <div class="download-box">
+      <dl>
+        <dt>Platform</dt><dd>Windows 10/11, x64</dd>
+        <dt>Price</dt><dd>Free</dd>
+        <dt>Latest</dt><dd data-release-version>v0.1.0</dd>
+      </dl>
+      <a class="btn btn-primary" href="https://github.com/RepousiosJim/beatforge-site/releases/latest">Download for Windows</a>
+      <p class="warn">The installer is unsigned, so Windows SmartScreen will warn you on first run. Click "More info" → "Run anyway" to continue. SHA-512 checksums are listed in <code>latest.yml</code> on the release.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <span>© 2026 Gemelon Studios</span>
+    <span>
+      <a href="changelog.html">Changelog</a> ·
+      <a href="https://github.com/RepousiosJim/beatforge-site">GitHub</a>
+    </span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
