@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en" data-theme="forge-dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BeatForge — Docs</title>
+<meta name="description" content="Getting started with BeatForge: install, first beat, piano roll, mixer, export, shortcuts.">
+<link rel="icon" href="assets/favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site">
+  <nav class="wrap">
+    <a class="wordmark" href="index.html">Beat<span>Forge</span></a>
+    <div class="navlinks">
+      <a href="index.html#features">Features</a>
+      <a href="index.html#download">Download</a>
+      <a href="docs.html" aria-current="page">Docs</a>
+      <a href="changelog.html">Changelog</a>
+      <a href="https://github.com/RepousiosJim/beatforge-site">GitHub</a>
+    </div>
+  </nav>
+</header>
+
+<main class="wrap changelog">
+  <h1>Docs</h1>
+
+  <div class="entry">
+    <h2>Install</h2>
+    <ul>
+      <li>Download the installer from the <a href="index.html#download">download</a> section, or run <code>irm https://repousiosjim.github.io/beatforge-site/install.ps1 | iex</code> in PowerShell.</li>
+      <li>Windows 10/11 x64. Per-user install, no admin. SmartScreen warns because the build is unsigned: choose More info → Run anyway.</li>
+      <li>Updates: BeatForge checks once at launch. Settings → Updates has Check, Download, Restart to update.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <h2>First beat</h2>
+    <ul>
+      <li>Channel rack lists tracks. Drum tracks use the Sequencer tab: click steps to toggle, Alt-drag for velocity.</li>
+      <li>Instrument tracks use the Piano roll tab: click to add a note, drag to move, right edge to resize, Alt-drag for velocity, or use the velocity lane below the grid.</li>
+      <li>Patterns: the Pattern menu in the top bar adds, duplicates, renames, and sets bar length. Song mode arranges patterns in the Playlist.</li>
+      <li>Space plays and stops. The Pat / Song switch chooses what plays.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <h2>Piano roll</h2>
+    <ul>
+      <li>Range A0–C8. PageUp / PageDown scroll an octave. Ctrl+wheel zooms; Follow keeps the playhead in view.</li>
+      <li>Toolbar: Quantize, Humanize, Chord stamp, Length, Transform (transpose, invert, reverse), Ghost track.</li>
+      <li>Select with marquee or click; Shift adds. Ctrl+C / Ctrl+V / Ctrl+D copy, paste, duplicate.</li>
+      <li>MIDI in: with a keyboard connected, toggle MIDI in. Stopped: step entry at the cursor. Playing: live record.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <h2>Mixer, effects, automation</h2>
+    <ul>
+      <li>Each strip: volume, pan, EQ3, compressor, FX slots (reverb, delay, chorus, distortion, multiband), sends to bus tracks.</li>
+      <li>Automation tab: lanes for track volume, pan, FX parameters and master. Draw points, set curves; playback and export honor them.</li>
+      <li>Recording: pick an input in Settings → Audio input, arm, record; clips land on an audio track and can be trimmed, split, faded.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <h2>AI assistant</h2>
+    <ul>
+      <li>Bring your own OpenRouter key in Settings. Pick a model per feature, set budgets, see cost per call.</li>
+      <li>Features: drum pattern, melody, mix suggestion, sample pick. Audition before you apply; every apply is undoable.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <h2>Export and files</h2>
+    <ul>
+      <li>Ctrl+Shift+E exports WAV, MP3 or MIDI. What you hear is what renders.</li>
+      <li>Projects are <code>.bfp</code> files. Recorded and imported audio lives beside them in a <code>.beatforge-audio</code> folder; autosave keeps three recovery slots in <code>.beatforge-recovery</code>. Move the folder with the file.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <h2>Shortcuts</h2>
+    <ul>
+      <li><code>Space</code> play / stop · <code>Ctrl+S</code> save · <code>Ctrl+Shift+S</code> save as · <code>Ctrl+O</code> open · <code>Ctrl+N</code> new · <code>Ctrl+Shift+E</code> export · <code>Ctrl+,</code> settings</li>
+      <li><code>Ctrl+Z</code> undo · <code>Ctrl+Y</code> / <code>Ctrl+Shift+Z</code> redo</li>
+      <li><code>Ctrl+Alt+B</code> browser · <code>Ctrl+Alt+D</code> detail · <code>Ctrl+Alt+M</code> mixer · <code>Ctrl+Alt+A</code> AI assistant</li>
+      <li>Piano roll: <code>Ctrl+A</code> select all · <code>Ctrl+C/V/D</code> copy, paste, duplicate · <code>Delete</code> · <code>Ctrl+Q</code> quantize · <code>Ctrl+H</code> humanize · <code>Shift+↑/↓</code> transpose semitone · <code>Ctrl+Shift+↑/↓</code> octave · <code>PageUp/PageDown</code> scroll octave · <code>Esc</code> deselect</li>
+    </ul>
+  </div>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <span>© 2026 Gemelon Studios</span>
+    <span><a href="changelog.html">Changelog</a> · <a href="https://github.com/RepousiosJim/beatforge-site">GitHub</a></span>
+  </div>
+</footer>
+</body>
+</html>
